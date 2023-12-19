@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US"class="tcb">
+<!--<![endif]-->
+<head>
+		<meta charset="UTF-8"/>
+				
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<style type="text/css" id="tcb-style-base-page-3642"  onLoad="typeof window.lightspeedOptimizeStylesheet === 'function' && window.lightspeedOptimizeStylesheet()" class="tcb-lightspeed-style">.thrv-page-section{position:relative;box-sizing:border-box !important;}.thrv-page-section .tve-page-section-out{position:absolute;width:100%;height:100%;left:0px;top:0px;box-sizing:border-box;transition:box-shadow 0.5s ease 0s;overflow:hidden;}.thrv-page-section.tve-height-update .tve-page-section-in{min-height:150px;}.thrv-page-section .tve-page-section-in{box-sizing:border-box;margin-right:auto;margin-left:auto;position:relative;z-index:1;min-height:40px;}.tve-page-section-in > .thrv_wrapper:first-child{margin-top:0px;}.tve-page-section-in > .thrv_wrapper:last-child{margin-bottom:0px;}.tve_image_caption{position:relative;}.tve_image_caption:not(.tcb-mm-image.tve-tab-image){height:auto !important;}.tve_image_caption .tve_image{max-width:100%;width:100%;}.tcb-style-wrap strong{font-weight:var(--g-bold-weight,bold);}.thrv_text_element{overflow-wrap:break-word;}.notifications-content-wrapper.tcb-permanently-hidden{display:none !important;}.tcb-permanently-hidden{display:none !important;}.tar-disabled{cursor:default;opacity:0.4;pointer-events:none;}.tve_et_click{cursor:pointer;}html{text-rendering:auto !important;}html body{text-rendering:auto !important;}body.tve_lp::before{content:none;}.thrv_wrapper{margin-top:20px;margin-bottom:20px;padding:1px;}.thrv_wrapper div{box-sizing:content-box;}.thrv_wrapper.thrv_text_element,.thrv_wrapper.thrv-page-section{margin:0px;}p{font-size:1em;}.tve_image{border-radius:0px;box-shadow:none;}div .tve_image_caption{padding:0px;max-width:100% !important;box-sizing:border-box !important;}.tve_image_caption .tve_image_frame{display:block;max-width:100%;position:relative;overflow:hidden;}.tve_image_caption .tve_image{display:block;padding:0px;height:auto;}:not(#_s):not(#_s) .tcb-conditional-display-placeholder{position:relative;min-height:var(--tcb-container-height-d,100px) !important;}:not(#_s):not(#_s) .tcb-conditional-display-placeholder.thrv-page-section{box-sizing:border-box;margin:0px;}:not(#_s):not(#_s) .tcb-conditional-display-placeholder.thrv-content-box{box-sizing:border-box;}:not(#_s):not(#_s) .tcb-conditional-display-placeholder .tve-page-section-out,:not(#_s):not(#_s) .tcb-conditional-display-placeholder .tve-content-box-background{box-sizing:border-box;position:absolute;width:100%;height:100%;left:0px;top:0px;overflow:hidden;}.tve_shortcode_rendered p:empty{display:none !important;}.thrv_wrapper.thrv_text_element{padding:1px;}.landingpage-section{flex-shrink:1;position:relative;margin:0px;padding:0px;display:flex;justify-content:center;align-items:center;width:100%;z-index:1;box-sizing:border-box !important;}.landingpage-section .section-content{position:relative;z-index:1;margin-left:auto;margin-right:auto;height:100%;width:100%;max-width:100%;box-sizing:border-box !important;}.landingpage-section .section-background{box-sizing:border-box;height:100%;position:absolute;top:0px;overflow:hidden;width:100%;max-width:100%;z-index:0;}.landingpage-section.hide-section{display:none;}@media (max-width:1023px){:not(#_s):not(#_s) .tcb-conditional-display-placeholder{min-height:var(--tcb-container-height-t) !important;}}@media (max-width:767px){html{overflow-x:hidden !important;}html,body{max-width:100vw !important;}:not(#_s):not(#_s) .tcb-conditional-display-placeholder{min-height:var(--tcb-container-height-m) !important;}}@media screen and (max-device-width:480px){body{text-size-adjust:none;}}</style>		<script type="text/javascript">
+			window.flatStyles = window.flatStyles || ''
+
+			window.lightspeedOptimizeStylesheet = function () {
+				const currentStylesheet = document.querySelector( '.tcb-lightspeed-style:not([data-ls-optimized])' )
+
+				if ( currentStylesheet ) {
+					try {
+						if ( currentStylesheet.sheet && currentStylesheet.sheet.cssRules ) {
+							if ( window.flatStyles ) {
+								if ( this.optimizing ) {
+									setTimeout( window.lightspeedOptimizeStylesheet.bind( this ), 24 )
+								} else {
+									this.optimizing = true;
+
+									let rulesIndex = 0;
+
+									while ( rulesIndex < currentStylesheet.sheet.cssRules.length ) {
+										const rule = currentStylesheet.sheet.cssRules[ rulesIndex ]
+										/* remove rules that already exist in the page */
+										if ( rule.type === CSSRule.STYLE_RULE && window.flatStyles.includes( `${rule.selectorText}{` ) ) {
+											currentStylesheet.sheet.deleteRule( rulesIndex )
+										} else {
+											rulesIndex ++
+										}
+									}
+									/* optimize, mark it such, move to the next file, append the styles we have until now */
+									currentStylesheet.setAttribute( 'data-ls-optimized', '1' )
+
+									window.flatStyles += currentStylesheet.innerHTML
+
+									this.optimizing = false
+								}
+							} else {
+								window.flatStyles = currentStylesheet.innerHTML
+								currentStylesheet.setAttribute( 'data-ls-optimized', '1' )
+							}
+						}
+					} catch ( error ) {
+						console.warn( error )
+					}
+
+					if ( currentStylesheet.parentElement.tagName !== 'HEAD' ) {
+						/* always make sure that those styles end up in the head */
+						const stylesheetID = currentStylesheet.id;
+						/**
+						 * make sure that there is only one copy of the css
+						 * e.g display CSS
+						 */
+						if ( ( ! stylesheetID || ( stylesheetID && ! document.querySelector( `head #${stylesheetID}` ) ) ) ) {
+							document.head.prepend( currentStylesheet )
+						} else {
+							currentStylesheet.remove();
+						}
+					}
+				}
+			}
+
+			window.lightspeedOptimizeFlat = function ( styleSheetElement ) {
+				if ( document.querySelectorAll( 'link[href*="thrive_flat.css"]' ).length > 1 ) {
+					/* disable this flat if we already have one */
+					styleSheetElement.setAttribute( 'disabled', true )
+				} else {
+					/* if this is the first one, make sure he's in head */
+					if ( styleSheetElement.parentElement.tagName !== 'HEAD' ) {
+						document.head.append( styleSheetElement )
+					}
+				}
+			}
+		</script>
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v17.0 (Yoast SEO v21.2) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Your Free Video PT EU - Top Speed Golf</title>
+	<link rel="canonical" href="index.html" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Your Free Video PT EU" />
+	<meta property="og:url" content="https://improve.topspeedgolf.com/your-free-video-pt-eu/" />
+	<meta property="og:site_name" content="Top Speed Golf" />
+	<meta property="article:modified_time" content="2022-10-03T18:36:22+00:00" />
+	<meta property="og:image" content="https://improve.topspeedgolf.com/wp-content/uploads/2021/07/TSGHeader_Improve-1.jpg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://improve.topspeedgolf.com/your-free-video-pt-eu/","url":"https://improve.topspeedgolf.com/your-free-video-pt-eu/","name":"Your Free Video PT EU - Top Speed Golf","isPartOf":{"@id":"https://improve.topspeedgolf.com/#website"},"primaryImageOfPage":{"@id":"https://improve.topspeedgolf.com/your-free-video-pt-eu/#primaryimage"},"image":{"@id":"https://improve.topspeedgolf.com/your-free-video-pt-eu/#primaryimage"},"thumbnailUrl":"https://improve.topspeedgolf.com/wp-content/uploads/2021/07/TSGHeader_Improve-1.jpg","datePublished":"2022-10-03T18:30:31+00:00","dateModified":"2022-10-03T18:36:22+00:00","breadcrumb":{"@id":"https://improve.topspeedgolf.com/your-free-video-pt-eu/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://improve.topspeedgolf.com/your-free-video-pt-eu/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://improve.topspeedgolf.com/your-free-video-pt-eu/#primaryimage","url":"https://improve.topspeedgolf.com/wp-content/uploads/2021/07/TSGHeader_Improve-1.jpg","contentUrl":"https://improve.topspeedgolf.com/wp-content/uploads/2021/07/TSGHeader_Improve-1.jpg","width":987,"height":132},{"@type":"BreadcrumbList","@id":"https://improve.topspeedgolf.com/your-free-video-pt-eu/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://improve.topspeedgolf.com/"},{"@type":"ListItem","position":2,"name":"Your Free Video PT EU"}]},{"@type":"WebSite","@id":"https://improve.topspeedgolf.com/#website","url":"https://improve.topspeedgolf.com/","name":"Top Speed Golf","description":"Just another WordPress site","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://improve.topspeedgolf.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='https://cdn.parsely.com' />
+<link rel='dns-prefetch' href='https://stats.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="Top Speed Golf &raquo; Feed" href="../feed/index.rss" />
+<link rel="alternate" type="application/rss+xml" title="Top Speed Golf &raquo; Comments Feed" href="../comments/feed/index.rss" />
+
+	<!-- anti-flicker snippet (recommended)  -->
+	
+	<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+	h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+	(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+	})(window,document.documentElement,'async-hide','dataLayer',4000,
+	{'GTM-MFXLJS6':true});</script>
+
+
+	<!-- Google Optimize Script -->
+	<script src="https://www.googleoptimize.com/optimize.js?id=GTM-MFXLJS6"></script>
+
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-M4JGBT');</script>
+	<!-- End Google Tag Manager -->
+
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/improve.topspeedgolf.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css'>img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+
+<link rel='stylesheet' id='all-css-4' href='../_static/index%EF%B9%96%EF%B9%96-eJyNjsEKwjAQRH%EA%A4%B7IdE1BWg%EA%A4%B7it6TJmq4machuKv69tVgRvHicYd5j4J6VnZJgEsihekoMMhaaUdUgFI3UCGIHNRRyHsEwozBY5mVuLI5TcFi4WYodfLlkxIgf1ZqAkt14RywQTHKUfDYe1aUs4F8WlkfAn2Wsart%EA%A4%B7RcnG3pRum349+i5ezDmedLdvD1r33fEJij1dVg==.css' type='text/css' media='all' />
+<script type="text/javascript" id="jquery-js-after">
+/* <![CDATA[ */
+    setTimeout(
+      function () {
+        try {
+          var tzmatch = document.cookie.match(/tz\=[-][0-9]/);
+          if ( tzmatch ) {
+            window.tz = parseInt( tzmatch[0].split('=')[1] );
+            return;
+          }
+          jQuery.ajax(
+            {
+              // url: 'https://pro.ip-api.com/json/?key=1Rts132V9AWjWMP',
+              // url: 'https://ip-api.com/json/',
+              url: 'https://pro.ip-api.com/json/?key=xJPY1UzLGDnHNjj',
+              method: "GET",
+              crossorigin: true
+            }
+          ).always(
+            function (data) {
+              window.ip_data = data;
+              window.tz = window.timezone( window.ip_data.lon );
+              document.cookie = 'tz=' + window.tz;
+            }
+          );
+        }
+        catch (e) {
+          console.log('e', e);
+        }
+      }
+    );
+
+    window.timezone = function ( _float ) {
+      return Math.ceil( _float / 15 );
+    };
+	
+
+          var cookies = document.cookie.split(";");
+          var iubenda_consent = false;
+          var _iub = _iub || [];
+          cookies = [];
+
+          $IP_Geolocation_EU_Countries = [
+            "Albania",
+            "Andorra",
+            "Armenia",
+            "Austria",
+            "Azerbaijan",
+            "Belarus",
+            "Belgium",
+            "Bosnia and Herzegovina",
+            "Bulgaria",
+            "Croatia",
+            "Cyprus",
+            "Czech Republic",
+            "Denmark",
+            "Estonia",
+            "Finland",
+            "France",
+            "Georgia",
+            "Germany",
+            "Greece",
+            "Hungary",
+            "Iceland",
+            "Ireland",
+            "Italy",
+            "Kosovo",
+            "Latvia",
+            "Liechtenstein",
+            "Lithuania",
+            "Luxembourg",
+            "Macedonia",
+            "Malta",
+            "Moldova",
+            "Monaco",
+            "Montenegro",
+            "Netherlands",
+            "Norway",
+            "Poland",
+            "Portugal",
+            "Romania",
+            "Russia",
+            "San Marino",
+            "Serbia",
+            "Slovakia",
+            "Slovenia",
+            "Spain",
+            "Sweden",
+            "Switzerland",
+            "Turkey",
+            "Ukraine",
+            "United Kingdom",
+            "Vatican City",
+          ];
+
+          _iub.csConfiguration = {
+            "banner": {
+			  "acceptButtonDisplay": true,
+			  "customizeButtonDisplay": true,
+			  "rejectButtonDisplay": true,
+              "backgroundColor": "#090446"
+            },
+            "lang": "en",
+			"siteId": 371030,
+            "cookiePolicyInOtherWindow": true,
+			"cookiePolicyId": 238680,
+			"consentOnContinuedBrowsing": false,
+            "callback": {
+              "onBannerShown": function () {
+                // clearCookies();
+              },
+              "onConsentGiven": function () {
+                // setTimeout(resumeCookies);
+              },
+              "onConsentRejected": function () {
+                clearCookies();
+              }
+            },
+			"enableCMP": true
+          };
+
+          setTimeout(
+            function () {
+              try {
+                jQuery.ajax(
+                  {
+                    // url: "https://pro.ip-api.com/json/?key=1Rts132V9AWjWMP",
+                    // url: "https://ip-api.com/json/",
+                    url: "https://pro.ip-api.com/json/?key=xJPY1UzLGDnHNjj",
+                    method: "GET",
+                    crossorigin: true
+                  }
+                ).always(
+                  function (data) {
+                    console.log('data', data);
+                    window.ip_data = data;
+                    for (var country in $IP_Geolocation_EU_Countries) {
+                      if (data.status !== 'success') {
+                        return;
+                      }
+                      var countryApproximator = new RegExp($IP_Geolocation_EU_Countries[country], 'gi');
+                      
+                      if (data.country.match(countryApproximator)) {
+                        window._european = true;
+                        document.cookie._european = true; 
+                      }                      
+                      
+                      if (data.country.match(countryApproximator) && !window.consent) {
+                        var _script = document.createElement('script');
+						var _script2 = document.createElement('script');					
+                        // _script.src = 'https://cdn.iubenda.com/cookie_solution/safemode/iubenda_cs.js';
+                        _script.src = '//cdn.iubenda.com/cs/iubenda_cs.js';
+						_script2.src = '//cdn.iubenda.com/cs/tcf/stub.js';
+                        jQuery('head')[0].appendChild(_script2);
+                        jQuery('head')[0].appendChild(_script);
+                      }
+                    }
+                  }
+                );
+              } catch (e) { console.log('e', e); }
+            },
+            100
+          );	
+	
+
+		/* 
+		  We are going to divert cookie declaration strings 
+		  -- eg: "NAME=value; Path=/; Domain=.topspeedgolf.com; Expires=Tues, 05 Jun 2018 00:00:00 GMT"
+		*/
+		document.fakeCookies = [];
+
+		// This function diverts cookie declaration strings into the above array
+		document.fakeCookieSetter = function (val) { 
+		  document.fakeCookies.push(val);
+		  return document.fakeCookies.join(''); 
+		}
+
+		// This function returns nothing, essentially.
+		document.fakeCookieGetter = function () {
+		  return '';
+		}
+
+		// These two functions are the native code that Get and Set cookies in the DOM
+		document.realCookieSetter = document.__lookupSetter__("cookie");
+		document.realCookieGetter = document.__lookupGetter__("cookie");
+
+		clearCookies = function () {
+		  // splitting the real cookie into an array
+		  cookies = document.cookie.split(';'); 
+		  for (var cookie in cookies) {
+			// Takes care of cookies without domain
+			document.cookie = cookies[cookie].trim().split('=')[0] + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT;';
+			// Takes care of cookies with domain
+			document.cookie = cookies[cookie].trim().split('=')[0] + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Domain=.topspeedgolf.com';
+			// Takes care of Top Speed Tennis
+			document.cookie = cookies[cookie].trim().split('=')[0] + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Domain=.topspeedtennis.com';
+		  }
+		};
+
+		/**
+		 * (Below) 
+		 *
+		 * if (compatible) {
+		 *   put the cookie diverters in place
+		 * }
+		 * else (alternate compatible) {
+		 *   put the cookie diverters in place
+		 * }
+		 */
+
+		// divert cookies to document.fakeCookies
+		stopCookies = function () {
+		  if(!document.__defineGetter__) {
+			Object.defineProperty(document, 'cookie', {
+			  get: document.fakeCookieGetter,
+			  set: document.fakeCookieSetter,
+			});
+		  } else {
+			document.__defineGetter__("cookie", document.fakeCookieGetter);
+			document.__defineSetter__("cookie", document.fakeCookieSetter);
+		  }
+		  console.log("Cookie Setting blocked until consent given!");
+		};
+
+		// restore cookie pipeline and dump document.fakeCookies into action
+		resumeCookies = function () {
+		  /* resume the real cookie getters and setters */
+		  if(!document.__defineGetter__) {
+			Object.defineProperty(document, 'cookie', {
+			  get: document.realCookieGetter,
+			  set: document.realCookieSetter,
+			});
+		  } else {
+			document.__defineGetter__("cookie", document.realCookieGetter);
+			document.__defineSetter__("cookie", document.realCookieSetter);
+		  }
+
+		  /* put all our diverted cookie strings into action */
+		  for (var fakeCookie in document.fakeCookies) {
+			document.cookie = document.fakeCookies[fakeCookie];
+		  }
+		}	
+	
+/* ]]> */
+</script>
+<script type="text/javascript" id="tve_frontend-js-extra">
+/* <![CDATA[ */
+var tve_frontend_options = {"ajaxurl":"https:\/\/improve.topspeedgolf.com\/wp-admin\/admin-ajax.php","is_editor_page":"","page_events":[],"is_single":"1","social_fb_app_id":"","dash_url":"https:\/\/improve.topspeedgolf.com\/wp-content\/plugins\/thrive-product-manager\/thrive-dashboard","queried_object":{"ID":3642,"post_author":"5"},"query_vars":{"page":"","pagename":"your-free-video-pt-eu"},"$_POST":[],"translations":{"Copy":"Copy","empty_username":"ERROR: The username field is empty.","empty_password":"ERROR: The password field is empty.","empty_login":"ERROR: Enter a username or email address.","min_chars":"At least %s characters are needed","no_headings":"No headings found","registration_err":{"required_field":"<strong>Error<\/strong>: This field is required","required_email":"<strong>Error<\/strong>: Please type your email address.","invalid_email":"<strong>Error<\/strong>: The email address isn&#8217;t correct.","passwordmismatch":"<strong>Error<\/strong>: Password mismatch"}},"routes":{"posts":"https:\/\/improve.topspeedgolf.com\/wp-json\/tcb\/v1\/posts"},"nonce":"fd67efed34","allow_video_src":"","google_client_id":null,"google_api_key":null,"facebook_app_id":null,"lead_generation_custom_tag_apis":["activecampaign","aweber","convertkit","drip","klicktipp","mailchimp","sendlane","zapier"],"post_request_data":[],"ip":"216.197.64.232","current_user":[],"post_id":"3642","post_title":"Your Free Video PT EU","post_type":"page","post_url":"https:\/\/improve.topspeedgolf.com\/your-free-video-pt-eu\/","is_lp":"tcb2-shapeshift-blank-page","conditional_display":{"is_tooltip_dismissed":false}};
+/* ]]> */
+</script>
+<script type="text/javascript" id="theme-frontend-js-extra">
+/* <![CDATA[ */
+var thrive_front_localize = {"comments_form":{"error_defaults":{"email":"Email address invalid","url":"Website address invalid","required":"Required field missing"}},"routes":{"posts":"https:\/\/improve.topspeedgolf.com\/wp-json\/tcb\/v1\/posts","frontend":"https:\/\/improve.topspeedgolf.com\/wp-json\/ttb\/v1\/frontend"},"tar_post_url":"?tve=true&action=architect&from_theme=1","is_editor":"","ID":"24","template_url":"?tve=true&action=architect&from_tar=3642","pagination_url":{"template":"https:\/\/improve.topspeedgolf.com\/your-free-video-pt-eu\/page\/[thrive_page_number]\/","base":"https:\/\/improve.topspeedgolf.com\/your-free-video-pt-eu\/"},"sidebar_visibility":[],"is_singular":"1","is_user_logged_in":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../_static/index%EF%B9%96%EF%B9%96-eJyNj9EKwjAMRX%EA%A4%B7ILhso4oP4LWWNXUbTziad+PeWMX3aRAhcAoeTXHhOhmIfikOBsc6jYH6t0TDFZpQD%EA%A4%B7IIMk89WcQ8mth4lJOvQ7TFsJcU%EA%A4%B77zUbcJ+iYlSYQvEUBXTINKOZSYoNBh1pyrBG9TkSBU6uhOr3GDHbsKXTARm%EA%A4%B7tmWD+hdYEdRVc88L%EA%A4%B7Kl242t3brtLe2qPx%EA%A4%B7ENhjaCgQ==.js" ></script><link rel="https://api.w.org/" href="../wp-json/index.json" /><link rel="alternate" type="application/json" href="../wp-json/wp/v2/pages/3642.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php%EF%B9%96rsd.xml" />
+<meta name="generator" content="WordPress 6.4.2" />
+<link rel='shortlink' href='index.html' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed%EF%B9%96url=https%EF%B9%95%EA%A4%B7%EA%A4%B7improve.topspeedgolf.com%EA%A4%B7your-free-video-pt-eu%EA%A4%B7.json" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed%EF%B9%96url=https%EF%B9%95%EA%A4%B7%EA%A4%B7improve.topspeedgolf.com%EA%A4%B7your-free-video-pt-eu%EA%A4%B7&amp;format=xml.xml" />
+<style type="text/css" id="tve_global_variables">:root{--tcb-color-0:rgb(51, 51, 51);--tcb-color-0-h:0;--tcb-color-0-s:0%;--tcb-color-0-l:20%;--tcb-color-0-a:1;--tcb-color-1:rgb(222, 123, 23);--tcb-color-1-h:30;--tcb-color-1-s:81%;--tcb-color-1-l:48%;--tcb-color-1-a:1;--tcb-color-2:rgb(59, 54, 108);--tcb-color-2-h:245;--tcb-color-2-s:33%;--tcb-color-2-l:31%;--tcb-color-2-a:1;--tcb-color-3:rgb(255, 0, 0);--tcb-color-3-h:0;--tcb-color-3-s:100%;--tcb-color-3-l:50%;--tcb-color-3-a:1;--tcb-color-4:rgb(9, 4, 70);--tcb-color-4-h:244;--tcb-color-4-s:89%;--tcb-color-4-l:14%;--tcb-color-4-a:1;--tcb-background-author-image:url(https://secure.gravatar.com/avatar/16a02c392c14529587c836a4263fa820?s=256&d=mm&r=g);--tcb-background-user-image:url();--tcb-background-featured-image-thumbnail:url(../wp-content/plugins/thrive-visual-editor/editor/css/images/featured_image.png);--tcb-skin-color-0:hsla(var(--tcb-theme-main-master-h,210), var(--tcb-theme-main-master-s,77%), var(--tcb-theme-main-master-l,54%), var(--tcb-theme-main-master-a,1));--tcb-skin-color-0-h:var(--tcb-theme-main-master-h,210);--tcb-skin-color-0-s:var(--tcb-theme-main-master-s,77%);--tcb-skin-color-0-l:var(--tcb-theme-main-master-l,54%);--tcb-skin-color-0-a:var(--tcb-theme-main-master-a,1);--tcb-skin-color-1:hsla(calc(var(--tcb-theme-main-master-h,210) - 0 ), calc(var(--tcb-theme-main-master-s,77%) + 2% ), calc(var(--tcb-theme-main-master-l,54%) - 0% ), 0.5);--tcb-skin-color-1-h:calc(var(--tcb-theme-main-master-h,210) - 0 );--tcb-skin-color-1-s:calc(var(--tcb-theme-main-master-s,77%) + 2% );--tcb-skin-color-1-l:calc(var(--tcb-theme-main-master-l,54%) - 0% );--tcb-skin-color-1-a:0.5;--tcb-skin-color-2:rgb(248, 248, 248);--tcb-skin-color-2-h:0;--tcb-skin-color-2-s:0%;--tcb-skin-color-2-l:97%;--tcb-skin-color-2-a:1;--tcb-skin-color-3:hsla(calc(var(--tcb-theme-main-master-h,210) + 30 ), 85%, 13%, 1);--tcb-skin-color-3-h:calc(var(--tcb-theme-main-master-h,210) + 30 );--tcb-skin-color-3-s:85%;--tcb-skin-color-3-l:13%;--tcb-skin-color-3-a:1;--tcb-skin-color-4:rgb(12, 17, 21);--tcb-skin-color-4-h:206;--tcb-skin-color-4-s:27%;--tcb-skin-color-4-l:6%;--tcb-skin-color-4-a:1;--tcb-skin-color-5:rgb(106, 107, 108);--tcb-skin-color-5-h:210;--tcb-skin-color-5-s:0%;--tcb-skin-color-5-l:41%;--tcb-skin-color-5-a:1;--tcb-skin-color-8:hsla(calc(var(--tcb-theme-main-master-h,210) - 0 ), calc(var(--tcb-theme-main-master-s,77%) + 2% ), calc(var(--tcb-theme-main-master-l,54%) - 0% ), 0.18);--tcb-skin-color-8-h:calc(var(--tcb-theme-main-master-h,210) - 0 );--tcb-skin-color-8-s:calc(var(--tcb-theme-main-master-s,77%) + 2% );--tcb-skin-color-8-l:calc(var(--tcb-theme-main-master-l,54%) - 0% );--tcb-skin-color-8-a:0.18;--tcb-skin-color-9:hsla(calc(var(--tcb-theme-main-master-h,210) - 3 ), 56%, 96%, 1);--tcb-skin-color-9-h:calc(var(--tcb-theme-main-master-h,210) - 3 );--tcb-skin-color-9-s:56%;--tcb-skin-color-9-l:96%;--tcb-skin-color-9-a:1;--tcb-skin-color-10:hsla(calc(var(--tcb-theme-main-master-h,210) - 21 ), calc(var(--tcb-theme-main-master-s,77%) + 23% ), calc(var(--tcb-theme-main-master-l,54%) + 27% ), 1);--tcb-skin-color-10-h:calc(var(--tcb-theme-main-master-h,210) - 21 );--tcb-skin-color-10-s:calc(var(--tcb-theme-main-master-s,77%) + 23% );--tcb-skin-color-10-l:calc(var(--tcb-theme-main-master-l,54%) + 27% );--tcb-skin-color-10-a:1;--tcb-skin-color-13:hsla(calc(var(--tcb-theme-main-master-h,210) - 0 ), calc(var(--tcb-theme-main-master-s,77%) + 2% ), calc(var(--tcb-theme-main-master-l,54%) - 18% ), 0.5);--tcb-skin-color-13-h:calc(var(--tcb-theme-main-master-h,210) - 0 );--tcb-skin-color-13-s:calc(var(--tcb-theme-main-master-s,77%) + 2% );--tcb-skin-color-13-l:calc(var(--tcb-theme-main-master-l,54%) - 18% );--tcb-skin-color-13-a:0.5;--tcb-skin-color-14:rgb(230, 230, 230);--tcb-skin-color-14-h:0;--tcb-skin-color-14-s:0%;--tcb-skin-color-14-l:90%;--tcb-skin-color-14-a:1;--tcb-skin-color-16:hsla(calc(var(--tcb-theme-main-master-h,210) - 0 ), 3%, 36%, 1);--tcb-skin-color-16-h:calc(var(--tcb-theme-main-master-h,210) - 0 );--tcb-skin-color-16-s:3%;--tcb-skin-color-16-l:36%;--tcb-skin-color-16-a:1;--tcb-skin-color-18:hsla(calc(var(--tcb-theme-main-master-h,210) - 1 ), calc(var(--tcb-theme-main-master-s,77%) + 1% ), calc(var(--tcb-theme-main-master-l,54%) - 1% ), 0.8);--tcb-skin-color-18-h:calc(var(--tcb-theme-main-master-h,210) - 1 );--tcb-skin-color-18-s:calc(var(--tcb-theme-main-master-s,77%) + 1% );--tcb-skin-color-18-l:calc(var(--tcb-theme-main-master-l,54%) - 1% );--tcb-skin-color-18-a:0.8;--tcb-skin-color-19:hsla(calc(var(--tcb-theme-main-master-h,210) - 3 ), 56%, 96%, 0.85);--tcb-skin-color-19-h:calc(var(--tcb-theme-main-master-h,210) - 3 );--tcb-skin-color-19-s:56%;--tcb-skin-color-19-l:96%;--tcb-skin-color-19-a:0.85;--tcb-skin-color-20:hsla(calc(var(--tcb-theme-main-master-h,210) - 3 ), 56%, 96%, 0.9);--tcb-skin-color-20-h:calc(var(--tcb-theme-main-master-h,210) - 3 );--tcb-skin-color-20-s:56%;--tcb-skin-color-20-l:96%;--tcb-skin-color-20-a:0.9;--tcb-skin-color-21:hsla(calc(var(--tcb-theme-main-master-h,210) - 210 ), calc(var(--tcb-theme-main-master-s,77%) - 77% ), calc(var(--tcb-theme-main-master-l,54%) + 46% ), 1);--tcb-skin-color-21-h:calc(var(--tcb-theme-main-master-h,210) - 210 );--tcb-skin-color-21-s:calc(var(--tcb-theme-main-master-s,77%) - 77% );--tcb-skin-color-21-l:calc(var(--tcb-theme-main-master-l,54%) + 46% );--tcb-skin-color-21-a:1;--tcb-skin-color-22:rgb(255, 255, 255);--tcb-skin-color-22-h:0;--tcb-skin-color-22-s:0%;--tcb-skin-color-22-l:100%;--tcb-skin-color-22-a:1;--tcb-skin-color-23:rgb(32, 65, 71);--tcb-skin-color-23-h:189;--tcb-skin-color-23-s:37%;--tcb-skin-color-23-l:20%;--tcb-skin-color-23-a:1;--tcb-skin-color-24:rgb(59, 59, 59);--tcb-skin-color-24-h:0;--tcb-skin-color-24-s:0%;--tcb-skin-color-24-l:23%;--tcb-skin-color-24-a:1;--tcb-skin-color-25:hsla(calc(var(--tcb-theme-main-master-h,210) - 0 ), calc(var(--tcb-theme-main-master-s,77%) + 5% ), calc(var(--tcb-theme-main-master-l,54%) + 8% ), 0.04);--tcb-skin-color-25-h:calc(var(--tcb-theme-main-master-h,210) - 0 );--tcb-skin-color-25-s:calc(var(--tcb-theme-main-master-s,77%) + 5% );--tcb-skin-color-25-l:calc(var(--tcb-theme-main-master-l,54%) + 8% );--tcb-skin-color-25-a:0.04;--tcb-skin-color-26:hsla(calc(var(--tcb-theme-main-master-h,210) + 1 ), calc(var(--tcb-theme-main-master-s,77%) + 6% ), calc(var(--tcb-theme-main-master-l,54%) + 9% ), 0.12);--tcb-skin-color-26-h:calc(var(--tcb-theme-main-master-h,210) + 1 );--tcb-skin-color-26-s:calc(var(--tcb-theme-main-master-s,77%) + 6% );--tcb-skin-color-26-l:calc(var(--tcb-theme-main-master-l,54%) + 9% );--tcb-skin-color-26-a:0.12;--tcb-skin-color-27:hsla(calc(var(--tcb-theme-main-master-h,210) + 10 ), calc(var(--tcb-theme-main-master-s,77%) + 6% ), calc(var(--tcb-theme-main-master-l,54%) + 17% ), 1);--tcb-skin-color-27-h:calc(var(--tcb-theme-main-master-h,210) + 10 );--tcb-skin-color-27-s:calc(var(--tcb-theme-main-master-s,77%) + 6% );--tcb-skin-color-27-l:calc(var(--tcb-theme-main-master-l,54%) + 17% );--tcb-skin-color-27-a:1;--tcb-skin-color-28:hsla(calc(var(--tcb-theme-main-master-h,210) + 2 ), calc(var(--tcb-theme-main-master-s,77%) - 34% ), calc(var(--tcb-theme-main-master-l,54%) + 27% ), 1);--tcb-skin-color-28-h:calc(var(--tcb-theme-main-master-h,210) + 2 );--tcb-skin-color-28-s:calc(var(--tcb-theme-main-master-s,77%) - 34% );--tcb-skin-color-28-l:calc(var(--tcb-theme-main-master-l,54%) + 27% );--tcb-skin-color-28-a:1;--tcb-skin-color-29:hsla(calc(var(--tcb-theme-main-master-h,210) - 0 ), calc(var(--tcb-theme-main-master-s,77%) + 6% ), calc(var(--tcb-theme-main-master-l,54%) + 10% ), 0.4);--tcb-skin-color-29-h:calc(var(--tcb-theme-main-master-h,210) - 0 );--tcb-skin-color-29-s:calc(var(--tcb-theme-main-master-s,77%) + 6% );--tcb-skin-color-29-l:calc(var(--tcb-theme-main-master-l,54%) + 10% );--tcb-skin-color-29-a:0.4;--tcb-skin-color-30:hsla(calc(var(--tcb-theme-main-master-h,210) - 1 ), calc(var(--tcb-theme-main-master-s,77%) + 5% ), calc(var(--tcb-theme-main-master-l,54%) + 8% ), 0.85);--tcb-skin-color-30-h:calc(var(--tcb-theme-main-master-h,210) - 1 );--tcb-skin-color-30-s:calc(var(--tcb-theme-main-master-s,77%) + 5% );--tcb-skin-color-30-l:calc(var(--tcb-theme-main-master-l,54%) + 8% );--tcb-skin-color-30-a:0.85;--tcb-main-master-h:210;--tcb-main-master-s:77%;--tcb-main-master-l:54%;--tcb-main-master-a:1;--tcb-theme-main-master-h:210;--tcb-theme-main-master-s:77%;--tcb-theme-main-master-l:54%;--tcb-theme-main-master-a:1;}</style>	<!-- Facebook Pixel Code --> 
+	<script id="fb-pixel"> 
+		!function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1074687712605190'); fbq('track', 'PageView'); 
+	</script>
+    <!-- Wicked Reports Snippet -->
+    <!--<script id="wicked-snippet" type="text/javascript" src="https://widget.wickedreports.com/v2/3484/wr-4ddc6e5b8bf00f424f74bba326c8b57f.js" async></script>-->
+	  <script id="set-affid-and-sid">
+	console.log( 'Transferring Affid and Sid if any...' );
+    var Params = location.search.split( /\?|&|=/ ).reduce( function ( a, v, i, o ) { !i || ( i % 2 ) || ( a[ o[ i - 1 ] ] = v ); return a; }, {} );
+	  
+	if ( Params.hasOwnProperty( 'affid' ) && Params.hasOwnProperty( 'sid' ) ) {
+	  // var iFrame = document.createElement( 'iframe' );
+	  // iFrame.src = 'https://topspeedgolf.com/wp-admin/admin-ajax.php?action=set_affid_and_sid_crossdomain&affid=' + Params.affid + '&sid=' + Params.sid;
+	  // document.head.appendChild( iFrame );
+	  xhr = new XMLHttpRequest();
+	  xhr.withCredentials = true;
+	  xhr.open( 'GET', 'https://topspeedgolf.com/wp-admin/admin-ajax.php?action=set_affid_and_sid_crossdomain&affid=' + Params.affid + '&sid=' + Params.sid );
+	  xhr.send();
+	}
+  </script>
+  	<!-- Drip -->
+	<script type="text/javascript" id="drip-in-head">
+	  var _dcq = _dcq || [];
+	  var _dcs = _dcs || {};
+	  _dcs.account = '5330502';
+
+	  (function() {
+		var dc = document.createElement('script');
+		dc.type = 'text/javascript'; dc.async = true;
+		dc.src = '//tag.getdrip.com/5330502.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(dc, s);
+	  })();
+	</script>
+	<!-- end Drip -->
+  	
+		<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"WebPage","headline":"Your Free Video PT EU","url":"http:\/\/improve.topspeedgolf.com\/your-free-video-pt-eu\/"}</script><link type="text/css" rel="stylesheet" class="thrive-external-font" href="https://fonts.googleapis.com/css?family=Literata:400,400i,600,600i,700,700i&amp;subset=latin&amp;display=swap"><link type="text/css" rel="stylesheet" class="thrive-external-font" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i,700,700i,500,500i&amp;subset=latin&amp;display=swap"><link type="text/css" rel="stylesheet" class="thrive-external-font" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&amp;subset=latin&amp;display=swap"><style type="text/css" id="thrive-default-styles">@media (min-width: 300px) { .tcb-style-wrap h1{ color:var(--tcb-skin-color-4);--tcb-applied-color:var$(--tcb-skin-color-4);font-family:Literata;--g-regular-weight:400;font-weight:var(--g-bold-weight, bold);font-size:40px;background-color:rgba(0, 0, 0, 0);font-style:normal;margin:0px;padding-top:0px;padding-bottom:24px;text-decoration:rgba(10, 10, 10, 0.85);text-transform:none;border-left:0px none rgba(10, 10, 10, 0.85);--g-bold-weight:600;line-height:1.3em; }.tcb-style-wrap h2{ font-family:Literata;--g-regular-weight:400;font-weight:var(--g-bold-weight, bold);color:var(--tcb-skin-color-4);--tcb-applied-color:var$(--tcb-skin-color-4);--g-bold-weight:600;padding-top:0px;margin-top:0px;padding-bottom:24px;margin-bottom:0px;font-size:34px;line-height:1.4em; }.tcb-style-wrap h3{ font-family:Literata;--g-regular-weight:400;font-weight:var(--g-bold-weight, bold);color:var(--tcb-skin-color-4);--tcb-applied-color:var$(--tcb-skin-color-4);--g-bold-weight:600;padding-top:0px;margin-top:0px;padding-bottom:24px;margin-bottom:0px;font-size:24px;line-height:1.4em; }.tcb-style-wrap h4{ font-family:Literata;--g-regular-weight:400;font-weight:var(--g-bold-weight, bold);color:var(--tcb-skin-color-4);--tcb-applied-color:var$(--tcb-skin-color-4);--g-bold-weight:600;padding-top:0px;margin-top:0px;padding-bottom:24px;margin-bottom:0px;font-size:20px;line-height:1.4em; }.tcb-style-wrap h5{ font-family:Literata;--g-regular-weight:400;font-weight:var(--g-bold-weight, bold);color:var(--tcb-skin-color-4);--tcb-applied-color:var$(--tcb-skin-color-4);--g-bold-weight:600;padding-top:0px;margin-top:0px;padding-bottom:24px;margin-bottom:0px;line-height:1.4em; }.tcb-style-wrap h6{ font-family:Literata;--g-regular-weight:400;font-weight:var(--g-bold-weight, bold);color:var(--tcb-skin-color-4);--tcb-applied-color:var$(--tcb-skin-color-4);--g-bold-weight:600;padding-top:0px;margin-top:0px;padding-bottom:24px;margin-bottom:0px;line-height:1.6em; }.tcb-style-wrap p{ color:var(--tcb-skin-color-5);--tcb-applied-color:var$(--tcb-skin-color-5);font-family:Muli;--g-regular-weight:400;--g-bold-weight:800;font-weight:var(--g-regular-weight, normal);font-size:18px;padding-top:0px;margin-top:0px;padding-bottom:24px;margin-bottom:0px; }:not(.inc) .thrv_text_element a:not(.tcb-button-link), :not(.inc) .tcb-styled-list a, :not(.inc) .tcb-numbered-list a, .tve-input-option-text a, .tcb-post-content p a, .tcb-post-content li a, .tcb-post-content blockquote a, .tcb-post-content pre a{ --tcb-applied-color:var$(--tcb-skin-color-5);font-family:inherit;--g-regular-weight:400;--g-bold-weight:800;font-weight:var(--g-regular-weight, normal);font-size:inherit;text-decoration-line:none;--eff:none;text-decoration-color:var(--eff-color, currentColor);color:var(--tcb-skin-color-0); }:not(.inc) .thrv_text_element a:not(.tcb-button-link):hover, :not(.inc) .tcb-styled-list a:hover, :not(.inc) .tcb-numbered-list a:hover, .tve-input-option-text a:hover, .tcb-post-content p a:hover, .tcb-post-content li a:hover, .tcb-post-content blockquote a:hover, .tcb-post-content pre a:hover { text-decoration-line:none;--eff:none;text-decoration-color:var(--eff-color, currentColor);color:var(--tcb-skin-color-3); }.tcb-style-wrap ul:not([class*="menu"]), .tcb-style-wrap ol{ color:var(--tcb-skin-color-5);--tcb-applied-color:var$(--tcb-skin-color-5);font-family:Muli;--g-regular-weight:400;--g-bold-weight:800;font-weight:var(--g-regular-weight, normal);font-size:18px;margin-top:0px;margin-bottom:0px;padding-top:0px;padding-bottom:12px;padding-left:0px; }.tcb-style-wrap li:not([class*="menu"]){ color:var(--tcb-skin-color-5);--tcb-applied-color:var$(--tcb-skin-color-5);font-family:Muli;--g-regular-weight:400;--g-bold-weight:800;font-weight:var(--g-regular-weight, normal);font-size:18px;line-height:1.4em;padding-bottom:16px;margin-bottom:0px; }.tcb-style-wrap blockquote{ color:var(--tcb-skin-color-5);--tcb-applied-color:var$(--tcb-skin-color-5);font-family:Muli;--g-regular-weight:400;--g-bold-weight:800;font-weight:var(--g-regular-weight, normal);font-size:18px;padding-top:0px;padding-bottom:0px;border-left:2px solid var(--tcb-skin-color-1);margin-top:0px;margin-bottom:24px; }body, .tcb-plain-text{ color:var(--tcb-skin-color-5);--tcb-applied-color:var$(--tcb-skin-color-5);font-family:Muli;--g-regular-weight:400;--g-bold-weight:800;font-weight:var(--g-regular-weight, normal);font-size:18px; } }@media (max-width: 1023px) { .tcb-style-wrap h1{ font-size:36px;padding-bottom:22px;margin-bottom:0px; }.tcb-style-wrap h2{ padding-bottom:22px;margin-bottom:0px;font-size:28px; }.tcb-style-wrap h3{ padding-bottom:22px;margin-bottom:0px;font-size:22px; }.tcb-style-wrap h4{ padding-bottom:22px;margin-bottom:0px; }.tcb-style-wrap h5{ padding-bottom:22px;margin-bottom:0px; }.tcb-style-wrap h6{ padding-bottom:22px;margin-bottom:0px; }.tcb-style-wrap p{ padding-bottom:22px;margin-bottom:0px;padding-top:0px;margin-top:0px; }.tcb-style-wrap ul:not([class*="menu"]), .tcb-style-wrap ol{ padding-top:0px;padding-bottom:4px; }.tcb-style-wrap li:not([class*="menu"]){ line-height:1.75em;--tcb-typography-line-height:1.75em;padding-bottom:14px;margin-bottom:0px; }.tcb-style-wrap blockquote{ margin-bottom:22px; } }@media (max-width: 767px) { .tcb-style-wrap h1{ font-size:28px;padding-bottom:20px;margin-bottom:0px; }.tcb-style-wrap h2{ font-size:24px;padding-bottom:20px;margin-bottom:0px; }.tcb-style-wrap h3{ font-size:22px;padding-bottom:20px;margin-bottom:0px; }.tcb-style-wrap h4{ font-size:20px;padding-bottom:20px;margin-bottom:0px; }.tcb-style-wrap h5{ padding-bottom:20px;margin-bottom:0px; }.tcb-style-wrap h6{ padding-bottom:20px;margin-bottom:0px; }.tcb-style-wrap p{ padding-bottom:20px;margin-bottom:0px;padding-top:0px;margin-top:0px; }.tcb-style-wrap ul:not([class*="menu"]), .tcb-style-wrap ol{ padding-left:0px;padding-bottom:4px;padding-top:0px; }.tcb-style-wrap li:not([class*="menu"]){ padding-bottom:10px;margin-bottom:0px; }.tcb-style-wrap blockquote{ margin-bottom:20px; } }</style><link rel="icon" href="../wp-content/uploads/2023/09/tsgfavicon.png" sizes="32x32" />
+<link rel="icon" href="../wp-content/uploads/2023/09/tsgfavicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../wp-content/uploads/2023/09/tsgfavicon.png" />
+<meta name="msapplication-TileImage" content="https://improve.topspeedgolf.com/wp-content/uploads/2023/09/tsgfavicon.png" />
+			<style class="tve_custom_style">@media (min-width: 300px){.tve_post_lp > div > :not(#tve){--page-section-max-width:1080px;}.thrv_header .symbol-section-in{max-width: var(--page-section-max-width)!important;}.thrv_footer .symbol-section-in{max-width: var(--page-section-max-width)!important;}.thrv_header .symbol-section-in,.thrv_footer .symbol-section-in{box-sizing: border-box;}[data-css="tve-u-17aa5ec8f98"]{min-width: 100%;min-height: 67px !important;}[data-css="tve-u-17aa5ed934a"]{background-color: rgb(9,4,70) !important;--background-color:rgb(9,4,70) !important;--tve-applied-background-color:rgb(9,4,70) !important;}:not(#tve) [data-css="tve-u-17aa5f6d0f5"]{font-size: 32px !important;padding-bottom: 0px !important;margin-bottom: 0px !important;line-height: 1.3em !important;color: rgb(70,144,62) !important;--tcb-applied-color:rgb(70,144,62) !important;--tve-applied-color:rgb(70,144,62) !important;font-weight: var(--g-regular-weight,normal) !important;}[data-css="tve-u-17aa5fe9012"]{margin-top: 0px !important;}[data-css="tve-u-17aa65cd572"]{width: 384px;--tve-alignment:center;float: none;margin: 5px auto !important;}[data-css="tve-u-17aa6b9cc22"]{background-color: rgb(9,4,70) !important;--background-color:rgb(9,4,70) !important;--tve-applied-background-color:rgb(9,4,70) !important;}[data-css="tve-u-17aa6ba4b1d"]{margin-top: 20px !important;padding-top: 10px !important;padding-bottom: 10px !important;}[data-css="tve-u-17aa6bb24cd"]{min-width: 100%;min-height: 1px !important;}[data-css="tve-u-17ae8d512cb"]{min-height: 100vh !important;}[data-css="tve-u-17aa65cd572"] .tve_image_frame{height: 100%;}[data-css="tve-u-17aee7361a0"]{margin-top: 0px;margin-left: 0px;width: 100% !important;max-width: none !important;}[data-css="tve-u-17b0d230e6b"]{margin-top: 0px !important;}[data-css="tve-u-17ce2092244"]{width: 700px;--tve-alignment:center;float: none;--tve-border-width:3px;border: 2px solid rgb(208,208,208);--tve-applied-border:2px solid rgb(208,208,208);--tve-border-radius:5px;border-radius: 5px;overflow: hidden;margin-left: auto !important;margin-right: auto !important;}[data-css="tve-u-17ceb47015e"]{margin-top: 20px !important;}:not(#tve) [data-css="tve-u-182d58aaa07"]{padding-bottom: 0px !important;margin-bottom: 0px !important;color: rgb(70,144,62) !important;--tcb-applied-color:rgb(70,144,62) !important;--tve-applied-color:rgb(70,144,62) !important;font-weight: var(--g-regular-weight,normal) !important;}}@media (max-width: 1023px){:not(#tve) [data-css="tve-u-17aa5f6d0f5"]{font-size: 32px !important;}}@media (max-width: 767px){:not(#tve) [data-css="tve-u-17aa5f6d0f5"]{font-size: 32px !important;padding-bottom: 6px !important;margin-bottom: 0px !important;}[data-css="tve-u-17aa65cd572"]{width: 313px;}[data-css="tve-u-17ce2092244"]{--tve-alignment:center;float: none;margin-top: 10px !important;margin-left: auto !important;margin-right: auto !important;}:not(#tve) [data-css="tve-u-182d58aaa07"]{font-size: 20px !important;}}</style> 			<style type="text/css" id="wp-custom-css">#wpstats{display:none}</style>
+	<style>html {
+            height: auto;
+        }
+
+            html.tcb-editor {
+                overflow-y: initial;
+            }
+
+            body:before, body:after {
+                height: 0 !important;
+            }
+
+            .thrv_page_section .out {
+                max-width: none
+            }
+
+            .tve_wrap_all {
+                position: relative;
+            }
+
+            /* Content Width - inherit Content Width directly from LP settings */
+            .thrv-page-section[data-inherit-lp-settings="1"] .tve-page-section-in {
+                max-width: 1080px !important;
+                max-width: var(--page-section-max-width) !important;
+            }
+			/* set the max-width also for over content settings */
+            body.tcb-full-header .thrv_header,
+            body.tcb-full-footer .thrv_footer {
+                width: 100vw;
+				max-width: 100vw;
+                left: 50%;
+                right: 50%;
+                margin-left: -50vw !important;
+                margin-right: -50vw !important;
+            }
+		</style>
+
+	</head>
+		<body class="page-template-default page page-id-3642 tve_lp"style="" data-css="tve-u-17081d94adb"> 				<div class="wrp cnt bSe" style="display: none">
+			<div class="awr"></div>
+		</div>
+		<div class="tve_wrap_all" id="tcb_landing_page">
+			<div class="tve_post_lp tve_lp_tcb2-shapeshift-blank-page tve_lp_template_wrapper" style="">
+								  <script id="cross-domain-old-cookie-check">
+		window.CheckUser = JSON.parse( '{"data":{},"ID":0,"caps":[],"cap_key":null,"roles":[],"allcaps":[],"filter":null}' );
+		
+    function CrossDomainOldCookieCheck () {
+      document.cookie = 'TSGCookieTest=yes;';
+      if ( ( !document.cookie.match( /freeVideosSignin=yes/ ) || !document.cookie.match( /CrossDomainCookieChecked=yes/ ) ) && document.cookie.match( /TSGCookieTest/ ) ) {
+        console.log( 'Transferring cookie...' );
+        var CheckFrame = document.createElement( 'iframe' );
+        CheckFrame.src = 'https://topspeedgolf.com/wp-admin/admin-ajax.php?action=crossdomain_cookie_endpoint';
+        CheckFrame.style.display = 'none';
+        document.body.appendChild( CheckFrame );
+        CheckFrame.addEventListener(
+          'load',
+          function () {
+            if ( document.cookie.match( /freeVideosSignin=yes/ ) ) {
+              document.cookie = 'CrossDomainCookieChecked=yes; Path=/; Domain=topspeedgolf.com';
+              // location.href = 'https://topspeedgolf.com/free-video-series/'
+							location.href = 'https://topspeedgolf.com/watch-your-free-video-now-pt/';
+            }
+          }
+        );
+      }
+      if ( document.cookie.match( /freeVideosSignin=yes/ ) ) {
+        // location.href = 'https://topspeedgolf.com/free-video-series/'
+        location.href = 'https://topspeedgolf.com/watch-your-free-video-now-pt/';
+      }
+    }
+    
+    if ( 
+			!location.href.match( /ct_builder=true/ ) 
+			&& 
+			!location.href.match( /vv3dzn/ ) 
+			&&
+			!location.href.match( /tve=true/ )
+			&&
+			!( 
+				CheckUser.hasOwnProperty( 'roles' ) 
+				&& 
+				CheckUser.roles.includes( 'administrator' ) 
+			) 
+		) {
+      CrossDomainOldCookieCheck();
+    }
+  </script>
+  <div id="tve_flt" class="tve_flt tcb-style-wrap"><div id="tve_editor" class="tve_shortcode_editor tar-main-content" data-post-id="3642"><div id="landingpage-top-section" class="landingpage-section top-section placeholder-section hide-section"><div class="section-background"></div><div class="section-content"></div></div><div class="thrv_wrapper thrv-page-section tve-height-update">
+	<div class="tve-page-section-out tcb-responsive-video" style="" data-css="tve-u-17aa6b9cc22"></div>
+	<div class="tve-page-section-in tve_empty_dropzone" data-css="tve-u-17aa6bb24cd" style=""><div class="thrv_wrapper tve_image_caption" data-css="tve-u-17aa65cd572" style=""><span class="tve_image_frame" style=""><img decoding="async" class="tve_image tcb-moved-image wp-image-257" alt="" data-id="257" data-init-width="987" data-init-height="132" title="" src="../wp-content/uploads/2021/07/TSGHeader_Improve-1.jpg" data-width="384" data-height="51" style="" data-css="tve-u-17aee7361a0" ml-d="0" mt-d="0" width="384" height="51" loading="lazy" srcset="../wp-content/uploads/2021/07/TSGHeader_Improve-1.jpg 987w, ../wp-content/uploads/2021/07/TSGHeader_Improve-1%EF%B9%96resize=300,40.jpg 300w, ../wp-content/uploads/2021/07/TSGHeader_Improve-1%EF%B9%96resize=768,103.jpg 768w" sizes="(max-width: 384px) 100vw, 384px" /></span></div></div>
+</div><div class="thrv_wrapper thrv-page-section tve-height-update" data-inherit-lp-settings="1">
+	<div class="tve-page-section-out tcb-responsive-video" data-css="tve-u-17ae945b52c"></div>
+	<div class="tve-page-section-in" data-css="tve-u-17ae8d512cb" style=""><div class="thrv_wrapper thrv_text_element" data-css="tve-u-17ceb47015e" style=""><p data-css="tve-u-17aa5f6d0f5" style="text-align: center;"><strong>Welcome to TopSpeedGolf.com!</strong></p><h3 data-css="tve-u-182d58aaa07" style="text-align: center;" class="">Click to continue your video…</h3></div><div class="thrv_wrapper tve_image_caption tve_ea_thrive_leads_2_step" data-css="tve-u-17ce2092244" style="--tve-border-width:3px;"><span class="tve_image_frame"><img decoding="async" class="tve_image tcb-moved-image tve_evt_manager_listen wp-image-3634 tve_et_click" alt="" data-id="3634" data-init-width="640" data-init-height="360" title="" src="../wp-content/uploads/2022/10/Golf-Swing-Power-Turn-640.jpg" data-width="696" data-height="392" style="" data-css="tve-u-182d59eebcc" data-tcb-events="__TCB_EVENT_[{&quot;config&quot;:{&quot;l_id&quot;:&quot;3644&quot;},&quot;a&quot;:&quot;thrive_leads_2_step&quot;,&quot;t&quot;:&quot;click&quot;}]_TNEVE_BCT__" width="696" height="392" loading="lazy" srcset="../wp-content/uploads/2022/10/Golf-Swing-Power-Turn-640.jpg 640w, ../wp-content/uploads/2022/10/Golf-Swing-Power-Turn-640%EF%B9%96resize=300,169.jpg 300w" sizes="(max-width: 696px) 100vw, 696px" /></span></div><div class="thrv_wrapper tve_wp_shortcode" data-css="tve-u-17b0d230e6b" style=""><div class="tve_shortcode_raw" style="display: none"></div><div class="tve_shortcode_rendered"></div></div></div>
+</div><div class="thrv_wrapper thrv-page-section tve-height-update" data-css="tve-u-17aa5fe9012" style="">
+	<div class="tve-page-section-out tcb-responsive-video" style="" data-css="tve-u-17aa5ed934a"></div>
+	<div class="tve-page-section-in tve_empty_dropzone" data-css="tve-u-17aa5ec8f98" style=""><div class="thrv_wrapper tve_wp_shortcode" data-css="tve-u-17aa6ba4b1d" style=""><div class="tve_shortcode_raw" style="display: none"></div><div class="tve_shortcode_rendered"><p style="text-align: center;"><span style="color: #FFFFFF;">&#169; 2015-2023 TopSpeedGolf.com</span> | <a class="" draggable="false" href="https://topspeedgolf.com/terms-use/">Terms of Use</a> | <a class="" draggable="false" href="https://topspeedgolf.com/privacy-policy/">Privacy Policy</a></p>
+</div></div></div>
+</div>
+<div id="landingpage-bottom-section" class="landingpage-section bottom-section placeholder-section hide-section"><div class="section-background"></div><div class="section-content"></div></div></div></div>			</div>
+						<div class="fr-dropdown-holder tcb-style-wrap"></div>
+		</div>
+						        <!-- Deadline Funnel --><script type="text/javascript" data-cfasync="false">function SendUrlToDeadlineFunnel(e){var r,t,c,a,h,n,o,A,i = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",d=0,l=0,s="",u=[];if(!e)return e;do r=e.charCodeAt(d++),t=e.charCodeAt(d++),c=e.charCodeAt(d++),A=r<<16|t<<8|c,a=A>>18&63,h=A>>12&63,n=A>>6&63,o=63&A,u[l++]=i.charAt(a)+i.charAt(h)+i.charAt(n)+i.charAt(o);while(d<e.length);s=u.join("");var C=e.length%3;var decoded = (C?s.slice(0,C-3):s)+"===".slice(C||3);decoded = decoded.replace("+", "-");decoded = decoded.replace("/", "_");return decoded;} var url = SendUrlToDeadlineFunnel(location.href); var parentUrlValue;try {parentUrlValue = window.parent.location.href;} catch(err) {if(err.name === "SecurityError") {parentUrlValue = document.referrer;}}var parentUrl = (parent !== window) ? ("/" + SendUrlToDeadlineFunnel(parentUrlValue)) : "";(function() {var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.setAttribute("data-scriptid", "dfunifiedcode");s.src ="https://a.deadlinefunnel.com/unified/reactunified.bundle.js?userIdHash=eyJpdiI6IkY2Tng4YjJuMzQrZWkyRGdGUEM4ekE9PSIsInZhbHVlIjoic2tIS014VXdWMkM0azM3bW1VYUpVdz09IiwibWFjIjoiMWMzM2QzOWVjOTI3MGJmYmIyYzI0MTYzZjlmM2MyZTIwYmQ2ZjhkOTk4ZjUyMDk4MjUxNjM4YjA2NDMyYzU5MiJ9&pageFromUrl="+url+"&parentPageFromUrl="+parentUrl;var s2 = document.getElementsByTagName("script")[0];s2.parentNode.insertBefore(s, s2);})(); </script><!-- End Deadline Funnel -->
+    <script type='text/javascript'>( $ => {
+	/**
+	 * Displays toast message from storage, it is used when the user is redirected after login
+	 */
+	if ( window.sessionStorage ) {
+		$( window ).on( 'tcb_after_dom_ready', () => {
+			const message = sessionStorage.getItem( 'tcb_toast_message' );
+
+			if ( message ) {
+				tcbToast( sessionStorage.getItem( 'tcb_toast_message' ), false );
+				sessionStorage.removeItem( 'tcb_toast_message' );
+			}
+		} );
+	}
+
+	/**
+	 * Displays toast message
+	 *
+	 * @param {string}   message  - message to display
+	 * @param {Boolean}  error    - whether the message is an error or not
+	 * @param {Function} callback - callback function to be called after the message is closed
+	 */
+	function tcbToast( message, error, callback ) {
+		/* Also allow "message" objects */
+		if ( typeof message !== 'string' ) {
+			message = message.message || message.error || message.success;
+		}
+		if ( ! error ) {
+			error = false;
+		}
+		TCB_Front.notificationElement.toggle( message, error ? 'error' : 'success', callback );
+	}
+} )( typeof ThriveGlobal === 'undefined' ? jQuery : ThriveGlobal.$j );
+</script><script>
+jQuery(function($){
+	var url_params = window.location.href.split('?')[1];
+	console.log(url_params);
+	
+	// if there are URL parameters
+	//console.log('im clicked')
+	if( url_params ){
+		$('.offer-CTA a').each(function(i, btn_object){
+			var btn_default_link = $(btn_object).attr('href').replace(url_params, '');
+			var new_link = btn_default_link + '?' + url_params;
+			console.log(btn_default_link);
+
+			if( btn_default_link.includes('?') ){
+				new_link = btn_default_link + '&' + url_params;
+			}
+			$(btn_object).attr('href', new_link);
+			console.log(new_link);
+		});
+	}
+	
+})
+</script>
+<script>
+jQuery(function($){
+	var url_params = window.location.href.split('?')[1];
+	//console.log( url_params );
+	url_params = utm_params_cookies(url_params);
+	
+	$(window).load(function() {
+		// if there are URL parameters
+		//console.log('im clicked')
+		if( !$('body').hasClass('tve_editor_page') && url_params ){
+			$('.offer-CTA2 a').each(function(i, btn_object){
+				var btn_default_link = $(btn_object).attr('href').replace(url_params, '');
+				var new_link = btn_default_link + '?' + url_params;
+				console.log(btn_default_link);
+
+				if( btn_default_link.includes('?') ){
+					new_link = btn_default_link + '&' + url_params;
+				}
+				$(btn_object).attr('href', new_link);
+				console.log(new_link);
+			});
+		}
+	});
+	
+	function utm_params_cookies(url_params){
+		
+		var additional_params = '';
+		
+		if( url_params === undefined ){
+			url_params = '';
+		}
+		
+		// utm_source
+		if( !url_params.includes('utm_source=') && au_get_cookie('utm_source') !== '' && au_get_cookie('utm_source') !== 'undefined'){
+			additional_params += '&utm_source=' + au_get_cookie('utm_source');
+		}
+		
+		// utm_medium
+		if( !url_params.includes('utm_medium=') && au_get_cookie('utm_medium') !== '' && au_get_cookie('utm_medium') !== 'undefined'){
+			additional_params += '&utm_medium=' + au_get_cookie('utm_medium');
+		}
+		
+		// utm_campaign
+		if( !url_params.includes('utm_campaign=') && au_get_cookie('utm_campaign') !== '' && au_get_cookie('utm_campaign') !== 'undefined'){
+			additional_params += '&utm_campaign=' + au_get_cookie('utm_campaign');
+		}
+		
+		// utm_term
+		if( !url_params.includes('utm_term=') && au_get_cookie('utm_term') !== '' && au_get_cookie('utm_term') !== 'undefined'){
+			additional_params += '&utm_term=' + au_get_cookie('utm_term');
+		}
+		
+		// utm_content
+		if( !url_params.includes('utm_content=') && au_get_cookie('utm_content') !== '' && au_get_cookie('utm_content') !== 'undefined'){
+			additional_params += '&utm_content=' + au_get_cookie('utm_content');
+		}
+		
+		// remove the first "&"
+		additional_params = additional_params.substring(1);
+		
+		if( url_params !== '' ){
+			return additional_params + '&' + url_params;
+		}
+		
+		// return
+		return additional_params;
+		
+	}
+	
+	function au_get_cookie(cname) {
+	  let name = cname + "=";
+	  let ca = document.cookie.split(';');
+	  for(let i = 0; i < ca.length; i++) {
+		let c = ca[i];
+		while (c.charAt(0) == ' ') {
+		  c = c.substring(1);
+		}
+		if (c.indexOf(name) == 0) {
+		  return c.substring(name.length, c.length);
+		}
+	  }
+	  return "";
+	}
+	
+})
+</script>
+<style type="text/css" id="tve_notification_styles"></style>
+<div class="tvd-toast tve-fe-message" style="display: none">
+	<div class="tve-toast-message tve-success-message">
+		<div class="tve-toast-icon-container">
+			<span class="tve_tick thrv-svg-icon"></span>
+		</div>
+		<div class="tve-toast-message-container"></div>
+	</div>
+</div><script type="text/javascript">window.TVE_Event_Manager_Registered_Callbacks = window.TVE_Event_Manager_Registered_Callbacks || {};window.TVE_Event_Manager_Registered_Callbacks.thrive_leads_2_step = function(t,a,c){var evt=ThriveGlobal.$j.Event("click"), $target=ThriveGlobal.$j("#tcb-evt-2st-"+c.l_id+" .tve-leads-two-step-trigger");if(t==="exit" && $target.data("shown-on-exit")){ return;}$target.data("shown-on-"+t, true);evt.tve_trigger=t;evt.tve_action=a;evt.tve_config=c;$target.first().trigger(evt);return false;};</script><span id="tcb-evt-2st-3644" style="display:none"><span class="tve-leads-two-step-trigger tl-2step-trigger-3644"></span></span><link rel='stylesheet' id='all-css-0' href='../wp-content/plugins/thrive-leads/editor-layouts/css/frontend%EF%B9%96m=1695308180g.css' type='text/css' media='all' />
+<script type="text/javascript" src="../_static/index%EF%B9%96%EF%B9%96-eJyVzTEOwjAMBdALkbqVQIgBcZaqMa2LE1exE8Tt8VBWBJOH%EA%A4%B774%EA%A4%B7PLcwSTbMBhvXmbKCLYUahkZaRw4YyaTAflaFSGqQJFZGhUYRpUuUu1UP4M8oT1yjJx%EA%A4%B7ZMEcverQJv+7E7AaL%EA%A4%B7VIqOKPb0ZdDqdko4Z9bX%EA%A4%B7ki8tBd3NJ1OPfDpT%EA%A4%B71x+P6Bt8XZ4M=.js" ></script><script type="text/javascript" src="../wp-includes/js/dist/i18n.min%EF%B9%96ver=7701b0c3857f914212ef.js" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="../wp-content/mu-plugins/wp-parsely-3.12/build/loader%EF%B9%96m=1702511879g.js" ></script><script type="text/javascript" data-parsely-site="improve.topspeedgolf.com" src="https://cdn.parsely.com/keys/improve.topspeedgolf.com/p.js?ver=3.12.0" id="parsely-cfg"></script>
+<script type="text/javascript" id="tve-dash-frontend-js-extra">
+/* <![CDATA[ */
+var tve_dash_front = {"ajaxurl":"https:\/\/improve.topspeedgolf.com\/wp-admin\/admin-ajax.php","force_ajax_send":"1","is_crawler":"","recaptcha":[],"post_id":"3642"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../wp-content/plugins/thrive-product-manager/thrive-dashboard/js/dist/frontend.min%EF%B9%96m=1695313183g.js" ></script><script defer type="text/javascript" src="https://stats.wp.com/e-202351.js" id="jetpack-stats-js"></script>
+<script type="text/javascript" id="jetpack-stats-js-after">
+/* <![CDATA[ */
+_stq = window._stq || [];
+_stq.push([ "view", {v:'ext',blog:'213948585',post:'3642',tz:'0',srv:'improve.topspeedgolf.com',hp:'vip',j:'1:12.8.1'} ]);
+_stq.push([ "clickTrackerInit", "213948585", "3642" ]);
+/* ]]> */
+</script>
+<script type="text/javascript" src="../wp-content/plugins/thrive-leads/js/frontend.min%EF%B9%96m=1695313183g.js" ></script><script type="text/javascript">var tcb_current_post_lists=JSON.parse('[]'); var tcb_post_lists=tcb_post_lists?[...tcb_post_lists,...tcb_current_post_lists]:tcb_current_post_lists;</script><script type="text/javascript">/*<![CDATA[*/if ( !window.TL_Const ) {var TL_Const={"security":"fb50633d5b","ajax_url":"https:\/\/improve.topspeedgolf.com\/wp-admin\/admin-ajax.php","forms":[],"action_conversion":"tve_leads_ajax_conversion","action_impression":"tve_leads_ajax_impression","ajax_load":1,"two_step_ids":["3644"],"custom_post_data":[],"current_screen":{"screen_type":3,"screen_id":3642},"ignored_fields":["email","_captcha_size","_captcha_theme","_captcha_type","_submit_option","_use_captcha","g-recaptcha-response","__tcb_lg_fc","__tcb_lg_msg","_state","_form_type","_error_message_option","_back_url","_submit_option","url","_asset_group","_asset_option","mailchimp_optin","tcb_token","tve_labels","tve_mapping","_api_custom_fields","_sendParams","_autofill"]};} else { window.TL_Front && TL_Front.extendConst && TL_Front.extendConst({"security":"fb50633d5b","ajax_url":"https:\/\/improve.topspeedgolf.com\/wp-admin\/admin-ajax.php","forms":[],"action_conversion":"tve_leads_ajax_conversion","action_impression":"tve_leads_ajax_impression","ajax_load":1,"two_step_ids":["3644"],"custom_post_data":[],"current_screen":{"screen_type":3,"screen_id":3642},"ignored_fields":["email","_captcha_size","_captcha_theme","_captcha_type","_submit_option","_use_captcha","g-recaptcha-response","__tcb_lg_fc","__tcb_lg_msg","_state","_form_type","_error_message_option","_back_url","_submit_option","url","_asset_group","_asset_option","mailchimp_optin","tcb_token","tve_labels","tve_mapping","_api_custom_fields","_sendParams","_autofill"]})} /*]]> */</script><span style="display:none" class="tl-placeholder-f-type-two_step_3644"></span><script type='text/javascript'>
+/* <![CDATA[ */
+var TVE_Ult_Data = {"ajaxurl":"https:\/\/improve.topspeedgolf.com\/wp-admin\/admin-ajax.php","ajax_load_action":"tve_ult_ajax_load","conversion_events_action":"tve_ult_conversion_event","shortcode_campaign_ids":[],"matched_display_settings":[],"campaign_ids":[],"post_id":3642,"is_singular":true,"tu_em":"","evergreen_redirects":[]};
+/* ]]> */
+</script>
+		<script type="text/javascript" src="../wp-content/plugins/thrive-ultimatum/js/dist/no-campaign.min%EF%B9%96v=3.20.2.js"></script>			</body>
+</html>

@@ -1,0 +1,71 @@
+  <script id="cross-domain-old-cookie-check">
+		window.CheckUser = JSON.parse( '{"data":{},"ID":0,"caps":[],"cap_key":null,"roles":[],"allcaps":[],"filter":null}' );
+		
+    function CrossDomainOldCookieCheck () {
+      document.cookie = 'TSGCookieTest=yes;';
+      if ( ( !document.cookie.match( /freeVideosSignin=yes/ ) || !document.cookie.match( /CrossDomainCookieChecked=yes/ ) ) && document.cookie.match( /TSGCookieTest/ ) ) {
+        console.log( 'Transferring cookie...' );
+        var CheckFrame = document.createElement( 'iframe' );
+        CheckFrame.src = 'https://topspeedgolf.com/wp-admin/admin-ajax.php?action=crossdomain_cookie_endpoint';
+        CheckFrame.style.display = 'none';
+        document.body.appendChild( CheckFrame );
+        CheckFrame.addEventListener(
+          'load',
+          function () {
+            if ( document.cookie.match( /freeVideosSignin=yes/ ) ) {
+              document.cookie = 'CrossDomainCookieChecked=yes; Path=/; Domain=topspeedgolf.com';
+              // location.href = 'https://topspeedgolf.com/free-video-series/'
+							location.href = 'https://topspeedgolf.com/watch-your-free-video-now-pitch/';
+            }
+          }
+        );
+      }
+      if ( document.cookie.match( /freeVideosSignin=yes/ ) ) {
+        // location.href = 'https://topspeedgolf.com/free-video-series/'
+        location.href = 'https://topspeedgolf.com/watch-your-free-video-now-pitch/';
+      }
+    }
+    
+    if ( 
+			!location.href.match( /ct_builder=true/ ) 
+			&& 
+			!location.href.match( /vv3dzn/ ) 
+			&&
+			!location.href.match( /tve=true/ )
+			&&
+			!( 
+				CheckUser.hasOwnProperty( 'roles' ) 
+				&& 
+				CheckUser.roles.includes( 'administrator' ) 
+			) 
+		) {
+      CrossDomainOldCookieCheck();
+    }
+  </script>
+  	<script>
+		function jXHR ( Method, URL, Data ) {
+			return new Promise(
+				( Success, Failure ) => {
+					var Request = new XMLHttpRequest();
+					Request.open( Method, URL );
+					Request.onreadystatechange = function () { if ( Request.readyState == 4 ) { Success( JSON.parse( Request.responseText ) ); } };
+					Request.onerror = Failure;
+					Request.send( JSON.stringify( Data ) );
+				}
+			);
+		}   
+
+		var EuroRedirect = 'https://improve.topspeedgolf.com/your-free-video-pitch-eu/';
+		var EuroCountryCodes = [ "AT", "BE", "BG", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "GB" ];             
+
+		console.log( 'Euro Redirect' );
+		jXHR( 'GET', 'https://pro.ip-api.com/json/?key=xJPY1UzLGDnHNjj' ).then( 
+			function ( Data ) {
+				if ( Data.hasOwnProperty( 'countryCode' ) && EuroCountryCodes.includes( Data.countryCode ) && EuroRedirect != '' ) {
+					location.href = EuroRedirect;
+				}
+				console.log( 'IP API Data', Data ); 
+			} 
+		);
+	</script>
+	{"id":3421,"date":"2022-09-27T19:57:18","date_gmt":"2022-09-27T19:57:18","guid":{"rendered":"https:\/\/improve.topspeedgolf.com\/?page_id=3421"},"modified":"2022-09-27T20:04:19","modified_gmt":"2022-09-27T20:04:19","slug":"your-free-video-pitch","status":"publish","type":"page","link":"https:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/","title":{"rendered":"Your Free Video Pitch"},"content":{"rendered":"<p><span style=\"\"><img decoding=\"async\" alt=\"\" data-id=\"257\" data-init-width=\"987\" data-init-height=\"132\" title=\"\" src=\"https:\/\/improve.topspeedgolf.com\/wp-content\/uploads\/2021\/07\/TSGHeader_Improve-1.jpg\" data-width=\"384\" data-height=\"51\" style=\"\" ml-d=\"0\" mt-d=\"0\" width=\"384\" height=\"51\" loading=\"lazy\"><\/span><\/p>\n<p style=\"text-align: center;\"><strong>Welcome to TopSpeedGolf.com!<\/strong><\/p>\n<h3 style=\"text-align: center;\">Click to continue your video\u2026<\/h3>\n<p><span><img decoding=\"async\" alt=\"\" data-id=\"3425\" data-init-width=\"700\" data-init-height=\"394\" title=\"pitch700play\" src=\"https:\/\/improve.topspeedgolf.com\/wp-content\/uploads\/2022\/09\/pitch700play.jpg\" data-width=\"696\" data-height=\"392\" style=\"\" width=\"696\" height=\"392\" loading=\"lazy\"><\/span><\/p>\n<p><\/p>\n<p style=\"text-align: center;\"><span style=\"color: #FFFFFF;\">&#169; 2015-2023 TopSpeedGolf.com<\/span> |\u00a0<a draggable=\"false\" href=\"https:\/\/topspeedgolf.com\/terms-use\/\">Terms of Use<\/a>\u00a0|\u00a0<a draggable=\"false\" href=\"https:\/\/topspeedgolf.com\/privacy-policy\/\">Privacy Policy<\/a><\/p>\n","protected":false},"excerpt":{"rendered":"<p>Welcome to TopSpeedGolf.com! Click to continue your video\u2026 |\u00a0Terms of Use\u00a0|\u00a0Privacy Policy<\/p>\n","protected":false},"author":5,"featured_media":0,"parent":0,"menu_order":0,"comment_status":"closed","ping_status":"closed","template":"","meta":{"footnotes":""},"yoast_head":"<!-- This site is optimized with the Yoast SEO Premium plugin v17.0 (Yoast SEO v21.2) - https:\/\/yoast.com\/wordpress\/plugins\/seo\/ -->\n<title>Your Free Video Pitch - Top Speed Golf<\/title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" \/>\n<link rel=\"canonical\" href=\"https:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/\" \/>\n<meta property=\"og:locale\" content=\"en_US\" \/>\n<meta property=\"og:type\" content=\"article\" \/>\n<meta property=\"og:title\" content=\"Your Free Video Pitch\" \/>\n<meta property=\"og:description\" content=\"Welcome to TopSpeedGolf.com! Click to continue your video\u2026 |\u00a0Terms of Use\u00a0|\u00a0Privacy Policy\" \/>\n<meta property=\"og:url\" content=\"https:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/\" \/>\n<meta property=\"og:site_name\" content=\"Top Speed Golf\" \/>\n<meta property=\"article:modified_time\" content=\"2022-09-27T20:04:19+00:00\" \/>\n<meta property=\"og:image\" content=\"https:\/\/improve.topspeedgolf.com\/wp-content\/uploads\/2021\/07\/TSGHeader_Improve-1.jpg\" \/>\n<meta name=\"twitter:card\" content=\"summary_large_image\" \/>\n<script type=\"application\/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\/\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/\",\"url\":\"https:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/\",\"name\":\"Your Free Video Pitch - Top Speed Golf\",\"isPartOf\":{\"@id\":\"https:\/\/improve.topspeedgolf.com\/#website\"},\"datePublished\":\"2022-09-27T19:57:18+00:00\",\"dateModified\":\"2022-09-27T20:04:19+00:00\",\"breadcrumb\":{\"@id\":\"https:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\/\/improve.topspeedgolf.com\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Your Free Video Pitch\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\/\/improve.topspeedgolf.com\/#website\",\"url\":\"https:\/\/improve.topspeedgolf.com\/\",\"name\":\"Top Speed Golf\",\"description\":\"Just another WordPress site\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\/\/improve.topspeedgolf.com\/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"}]}<\/script>\n<!-- \/ Yoast SEO Premium plugin. -->","yoast_head_json":{"title":"Your Free Video Pitch - Top Speed Golf","robots":{"index":"index","follow":"follow","max-snippet":"max-snippet:-1","max-image-preview":"max-image-preview:large","max-video-preview":"max-video-preview:-1"},"canonical":"https:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/","og_locale":"en_US","og_type":"article","og_title":"Your Free Video Pitch","og_description":"Welcome to TopSpeedGolf.com! Click to continue your video\u2026 |\u00a0Terms of Use\u00a0|\u00a0Privacy Policy","og_url":"https:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/","og_site_name":"Top Speed Golf","article_modified_time":"2022-09-27T20:04:19+00:00","og_image":[{"url":"https:\/\/improve.topspeedgolf.com\/wp-content\/uploads\/2021\/07\/TSGHeader_Improve-1.jpg"}],"twitter_card":"summary_large_image","schema":{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/","url":"https:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/","name":"Your Free Video Pitch - Top Speed Golf","isPartOf":{"@id":"https:\/\/improve.topspeedgolf.com\/#website"},"datePublished":"2022-09-27T19:57:18+00:00","dateModified":"2022-09-27T20:04:19+00:00","breadcrumb":{"@id":"https:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/"]}]},{"@type":"BreadcrumbList","@id":"https:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/improve.topspeedgolf.com\/"},{"@type":"ListItem","position":2,"name":"Your Free Video Pitch"}]},{"@type":"WebSite","@id":"https:\/\/improve.topspeedgolf.com\/#website","url":"https:\/\/improve.topspeedgolf.com\/","name":"Top Speed Golf","description":"Just another WordPress site","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/improve.topspeedgolf.com\/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}},"parsely":{"version":"1.1.0","meta":{"@context":"https:\/\/schema.org","@type":"WebPage","headline":"Your Free Video Pitch","url":"http:\/\/improve.topspeedgolf.com\/your-free-video-pitch\/"},"rendered":"<script type=\"application\/ld+json\">{\"@context\":\"https:\\\/\\\/schema.org\",\"@type\":\"WebPage\",\"headline\":\"Your Free Video Pitch\",\"url\":\"http:\\\/\\\/improve.topspeedgolf.com\\\/your-free-video-pitch\\\/\"}<\/script>","tracker_url":"https:\/\/cdn.parsely.com\/keys\/improve.topspeedgolf.com\/p.js"},"_links":{"self":[{"href":"https:\/\/improve.topspeedgolf.com\/wp-json\/wp\/v2\/pages\/3421"}],"collection":[{"href":"https:\/\/improve.topspeedgolf.com\/wp-json\/wp\/v2\/pages"}],"about":[{"href":"https:\/\/improve.topspeedgolf.com\/wp-json\/wp\/v2\/types\/page"}],"author":[{"embeddable":true,"href":"https:\/\/improve.topspeedgolf.com\/wp-json\/wp\/v2\/users\/5"}],"replies":[{"embeddable":true,"href":"https:\/\/improve.topspeedgolf.com\/wp-json\/wp\/v2\/comments?post=3421"}],"version-history":[{"count":4,"href":"https:\/\/improve.topspeedgolf.com\/wp-json\/wp\/v2\/pages\/3421\/revisions"}],"predecessor-version":[{"id":3430,"href":"https:\/\/improve.topspeedgolf.com\/wp-json\/wp\/v2\/pages\/3421\/revisions\/3430"}],"wp:attachment":[{"href":"https:\/\/improve.topspeedgolf.com\/wp-json\/wp\/v2\/media?parent=3421"}],"curies":[{"name":"wp","href":"https:\/\/api.w.org\/{rel}","templated":true}]}}
